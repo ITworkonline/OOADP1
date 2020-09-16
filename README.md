@@ -20,7 +20,10 @@
 >> abstract class ZooEmployee, class ZooKeeper
 
 
-----**Comments**: For this project, we have two main parts, animals and zookeeper.  
+----**Comments**: The hardest part for us is to think how to construct such project. We have to define a Animal as a superclass. And then, let Canine, Feline, Pachyderm, and Ursidae to inhert some methods from their parent class. After that, we can design the specific animal species class inside of each category like Canine. Finally, we can define the Zookeeper class which get the abstract method from the ZooEmployee.
+
+
+For this project, we have two main parts, animals and zookeeper.  
 
 In the class of animal, we define the animal's type and name as the attributes so that when we easily initialize a new animal with its type and name as the identity. And we define the eat(), dig(), roam(), makeNoise(), charge(), wakeUp(), rollCall(), feed(), exercise(), and toSleep() methods. The reason that we build plenty of methods here is some animals don't have the unique behavior. For example, there is no difference for wakeUp behavior between a dog and a cat. So we just define it in the parent class. And some of the methods have the animal identity. We can just override in the following subclass.  
 
